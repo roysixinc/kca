@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student register form</title>
+        <link rel="stylesheet" href="mikwa.css"> 
+    </head>
+    <body>
+        <div class="form-table">
+        <form method="POST"action=register.php><lable for="fullname" class="name-label">Full Name:</lable>
+            <input class="fullname" type="text" id="fullname" name="fullname" required>
+            <br>
+            
+            <label for="tel" class="name-label">Telephone Number:</label>
+            <input class="tel-no" type="tel" id="tel" name="tel" required>
+            <br>
+
+            <lable for="dob" class="do-birth">Date of Birth:</lable>
+            <input class="dob-details" type="date" id="dob" name="dob"required>
+            <br>
+            
+            <lable for="admission" class="adm-no">Admission Number:</lable>
+            <input class="admission-no" type="text" id="admission" name="admission" required>
+            <br>
+
+            <label for="Course" class="course-label">Course:</label>
+            <select id="course" name="course" class="drop-options" required>
+                <option value="">Select a course</option>
+                <option value="cbit">Computer Business and  Information Technology (CBIT)</option>
+                <option value="cit">computer Information Technology (CIT)</option>
+            </select>
+            <br>
+
+            <label for="gender" class="gender-choice">Gender</label>
+            <input  type="radio" id="male" name="gender" value="male" required>
+            <label for="male" class="male-option">Male</label>
+            <input class="6f" type="radio" id="female" name="gender" value="female" required>
+            <lable for="female" class="female-option">Female</lable>
+            <br>
+            <input class="submit-button" type="submit" value="submit">
+        </form>
+    </div>
+    </body>
+</html>
